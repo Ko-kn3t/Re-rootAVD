@@ -1,6 +1,5 @@
-# This Repo has moved to GitLab since 24th of Oct 2023
-# [rootAVD](https://gitlab.com/newbit/rootAVD)
-### [newbit @ xda-developers](https://forum.xda-developers.com/m/newbit.1350876)
+# Re-rootAVD
+### A fork of [rootAVD](https://gitlab.com/newbit/rootAVD) by [newbit @ xda-developers](https://forum.xda-developers.com/m/newbit.1350876), updated for Android 17 support
 A Script to...
 * root your Android Studio Virtual Device (AVD), with Magisk (Stable, Canary or Alpha)
 * patch its fstab
@@ -11,9 +10,9 @@ A Script to...
 ...within seconds.
 
 ## Install Magisk
-### Download rootAVD via
-* [Click](https://gitlab.com/newbit/rootAVD/-/archive/master/rootAVD-master.zip)
-* `git clone https://gitlab.com/newbit/rootAVD.git`
+### Download Re-rootAVD via
+* [Click](https://github.com/Ko-kn3t/Re-rootAVD/archive/refs/heads/master.zip)
+* `git clone https://github.com/Ko-kn3t/Re-rootAVD.git`
 
 ### Preconditions
 * the AVD is running
@@ -242,6 +241,7 @@ rootAVD.bat system-images\android-25\google_apis_playstore\armeabi-v7a\ramdisk.i
 * Magisk Versions >= 26.x can only be proper installed with the FAKEBOOTIMG argument
 	* due to the [New sepolicy.rule Implementation](https://github.com/topjohnwu/Magisk/releases/tag/v26.1)
 * Android 14 needs Magisk Version >= 26.x to be rooted
+* Android 17 needs Magisk Version >= 30.x to be rooted (bundled Magisk.zip updated to v30.7)
 
 ### Notes on Magisk Versions
 * Replace the Magisk.zip with the Flavour/Version of your choice
@@ -383,6 +383,9 @@ rootAVD.bat system-images\android-25\google_apis_playstore\armeabi-v7a\ramdisk.i
 </details>
 
 ### Change Logs
+#### [Jul 2026]
+* [General] - Updated bundled Magisk to v30.7 for Android 17 support
+
 #### [Oct 2024]
 * [rootAVD.sh] - Added Support for LD_PRELOAD of init
 * [General] - Updated to Magisk v26.4
